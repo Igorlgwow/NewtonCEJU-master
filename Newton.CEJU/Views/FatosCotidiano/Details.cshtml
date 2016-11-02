@@ -1,0 +1,33 @@
+﻿@model Newton.CJU.Models.FatoCotidiano
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Fato Cotidiano</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaConhecimento.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaConhecimento.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>
